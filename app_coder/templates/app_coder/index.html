@@ -1,0 +1,57 @@
+{% extends 'app_coder/base.html' %}
+{% load static %}
+
+{% block title %}
+La Casa del Codigo | Inicio
+{% endblock %}
+
+{% block content %}
+<!-- Content section 1-->
+<section id="scroll">
+    <div class="container px-5">
+        <div class="row gx-5 align-items-center">
+            <div class="col-lg-6 order-lg-2">
+                <div class="p-5"><img class="img-fluid rounded-circle" src="{% static 'app_coder/assets/img/imagen1.jpg' %}" alt="..." /></div>
+            </div>
+            <div class="col-lg-6 order-lg-1">
+                <div class="p-5">
+                    <h2 class="display-4">Código al alcance de todos</h2>
+                    <p>Aprende a programar desde cero con nuestros cursos online. Domina los lenguajes más demandados y construye tu futuro en el mundo tecnológico.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Content section 2-->
+<section>
+    <div class="container px-5">
+        <div class="row gx-5 align-items-center">
+            <div class="col-lg-6">
+                <div class="p-5"><img class="img-fluid rounded-circle" src="{% static 'app_coder/assets/img/imagen2.jpg' %}" alt="..." /></div>
+            </div>
+            <div class="col-lg-6">
+                <div class="p-5">
+                    <h2 class="display-4">Únete a nuestra comunidad de programadores</h2>
+                    <p>Aprende a programar en compañía de otros entusiastas. Ofrecemos cursos interactivos y una comunidad activa para resolver tus dudas.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Content section 3-->
+<section>
+    <div class="container px-5">
+        <div class="row gx-5 align-items-center">
+            <div class="col-lg-6 order-lg-2">
+                <div class="p-5"><img class="img-fluid rounded-circle" src="{% static 'app_coder/assets/img/imagen3.jpg' %}" alt="..." /></div>
+            </div>
+            <div class="col-lg-6 order-lg-1">
+                <div class="p-5">
+                    <h2 class="display-4">Prepárate para el futuro de la tecnología</h2>
+                    <p>Adquiere las habilidades más demandadas en el mercado laboral y construye tu carrera en el mundo tecnológico.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

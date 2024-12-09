@@ -1,0 +1,46 @@
+{% extends 'app_coder/base.html' %}
+
+{% load static %}
+
+{% block title %}
+La Casa del Codigo | Cursos 🙌
+{% endblock %}
+
+{% block content %}
+    <h1>Nuestros cursos</h1>
+    <p>Los mejores cursos de Latinoamerica</p>
+
+
+    <h2>Buscar curso</h2>
+    <!-- Formulario de búsqueda -->
+    <div class="d-flex flex-column align-items-center mb-2">
+      <form action="" method="GET">
+        <input type="text" name="q" placeholder="Buscar..." required>
+        <button type="submit">Buscar</button>
+      </form>
+    </div>
+
+    <div class="container">
+
+        <table class="table">
+            <thead>
+              <tr class="table-danger">
+                <th scope="col">Curso</th>
+                <th scope="col">Comisión</th>
+              </tr>
+            </thead>
+            <tbody>
+                {% for curso in cursos %}
+              <tr class="table-success">
+                <td>{{curso.nombre}}</td>
+                <td>{{curso.comision}}</td>
+                {% endfor %}
+              </tr>
+    
+            </tbody>
+          </table>
+
+    </div>
+    
+
+{% endblock  %}
